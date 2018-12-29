@@ -1,0 +1,51 @@
+<main>
+  <div class="container">
+    <div class="col-md-6 col-xs-12 table-holder">
+
+      <h3>Top Incidents</h3>
+      <table class='col-xs-12 noPadding' mat-table [dataSource]="incidents" class="mat-elevation-z8">
+        <!-- Incident Name Column -->
+        <ng-container matColumnDef="name">
+          <th mat-header-cell *matHeaderCellDef> Incident Name </th>
+          <td mat-cell *matCellDef="let element"> {{element.name}} </td>
+        </ng-container>
+
+        <!-- Incident Severity Column -->
+        <ng-container matColumnDef="severity">
+          <th mat-header-cell *matHeaderCellDef> Severity </th>
+          <td mat-cell *matCellDef="let element"> {{element.severity}} </td>
+        </ng-container>
+
+        <!-- Incident Count Column -->
+        <ng-container matColumnDef="count">
+          <th mat-header-cell *matHeaderCellDef> Count </th>
+          <td mat-cell *matCellDef="let element"> {{element.count}} </td>
+        </ng-container>
+
+        <tr mat-header-row *matHeaderRowDef="displayedTableColumns"></tr>
+        <tr mat-row *matRowDef="let row; columns: displayedTableColumns;"></tr>
+      </table>
+
+    </div>
+    <div class="col-md-6 col-xs-12 timeline" *ngIf='elements'>
+      <div class="horizontal-bar"></div>
+
+      <div class="element" *ngFor='let element of elements'>
+        <app-timeline-element [data]="element"></app-timeline-element>
+      </div>
+
+    </div>
+    <div class="clearfix"></div>
+  </div>
+
+  <div class='container text-center'>
+    <angular-tag-cloud
+      [strict]="true"
+      [data]="data"
+      [width]="options.width"
+      [height]="options.height"
+      [overflow]="options.overflow">
+    </angular-tag-cloud>
+  </div>
+
+</main>

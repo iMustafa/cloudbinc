@@ -1,0 +1,23 @@
+<main>
+  <div class="container">
+    <div class="col-md-6 col-xs-12">
+      <fusioncharts width="600" height="300" type="pie3d" dataFormat="json" [dataSource]="pie">
+      </fusioncharts>
+    </div>
+    <div class="col-md-6 col-xs-12">
+      <fusioncharts width="600" height="300" type="angulargauge" dataFormat="json" [dataSource]="meter">
+      </fusioncharts>
+    </div>
+    <div class="clearfix"></div>
+  </div>
+
+  <div class='container text-center'>
+    <angular-tag-cloud
+      [strict]="true"
+      [data]="data"
+      [width]="options.width"
+      [height]="options.height"
+      [overflow]="options.overflow">
+    </angular-tag-cloud>
+  </div>
+</main>

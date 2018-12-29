@@ -1,0 +1,23 @@
+[
+  {
+    "icon": "check_box",
+    "heading": "First Heading",
+    "paragraph": "Test paragraph",
+    "hoursAgo": "3",
+    "platform": "Twitter"
+  },
+  {
+    "icon": "check_box",
+    "heading": "Second Heading",
+    "paragraph": "Test paragraph",
+    "hoursAgo": "6",
+    "platform": "Twitter"
+  },
+  {
+    "icon": "check_box",
+    "heading": "Third Heading",
+    "paragraph": "Test paragraph",
+    "hoursAgo": "9",
+    "platform": "Twitter"
+  }
+]

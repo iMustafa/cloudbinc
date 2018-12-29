@@ -1,0 +1,22 @@
+[
+  {
+    "name": "Incident Name 1",
+    "severity": "Low",
+    "count": 2
+  },
+  {
+    "name": "Incident Name 2",
+    "severity": "Moderate",
+    "count": 5
+  },
+  {
+    "name": "Incident Name 3",
+    "severity": "Low",
+    "count": 10
+  },
+  {
+    "name": "Incident Name 4",
+    "severity": "High",
+    "count": 1
+  }
+]

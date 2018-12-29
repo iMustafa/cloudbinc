@@ -1,0 +1,29 @@
+main {
+  margin-top: 100px
+}
+
+div.holder:not(:first-of-type) div.image {
+  margin-bottom: 15px
+}
+
+div.image img {
+  width: 40%
+}
+
+div.data {
+  display: inline-block;
+  margin: 0 auto;
+  text-align: left;
+}
+
+div.data span {
+  display: block
+}
+
+div.data span.green {
+  color: #0F0
+}
+
+div.data span.red {
+  color: #F00
+}
